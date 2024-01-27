@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputEditTextName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Name"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:maxLength="15"
+            tools:text="Jeet" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroupVideoSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:checkedButton="@id/radioButtonVideo1"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutName">
+
+        <RadioButton
+            android:id="@+id/radioButtonVideo1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" />
+
+        <RadioButton
+            android:id="@+id/radioButtonVideo2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" />
+
+        <RadioButton
+            android:id="@+id/radioButtonVideo3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4" />
+
+        <RadioButton
+            android:id="@+id/radioButtonVideo4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" />
+
+        <RadioButton
+            android:id="@+id/radioButtonVideo5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" />
+
+        <RadioButton
+            android:id="@+id/radioButtonVideo6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4" />
+
+        <RadioButton
+            android:id="@+id/radioButtonVideo7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4" />
+
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupVideoSelect" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
