@@ -3,8 +3,8 @@ package com.example.reelapp
 import android.view.View
 import com.example.reelapp.ui.reel.adapter.ReelAdapter
 import com.example.reelapp.ui.reel.data.ReelData
-import org.junit.Test
 import org.junit.Assert.*
+import org.junit.Test
 import org.mockito.Mockito.mock
 
 /**
